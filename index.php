@@ -13,12 +13,10 @@
       <div class="container">
           <div class="row">
               <div class="col-12">
-                  <!--Nous créons une valeur $date dans lequel nous demandons une date sans donnée
-                  qui viendra selectionner la date d'aujourd'hui par défaut
-                  Puis l'on demande à l'afficher sous le format jj/mm/aaaa-->
+                  <!--Nous choisissons la méthode date() qui permet de mettre la date
+                  en forme-->
                   <?php 
-                  $date = new DateTime();
-                  echo $date->format('D/M/Y');
+                    echo date('d/m/y');
                   ?>
               </div>
           </div>
